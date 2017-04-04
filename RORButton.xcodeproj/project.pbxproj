@@ -15,6 +15,58 @@
 		B00AD7021E93C5AD00D74A31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00AD7001E93C5AD00D74A31 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		B02405131E940A5100FAC2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B02405091E940A5100FAC2DA /* ReactiveObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725EA19E49ED7006002AA;
+			remoteInfo = "ReactiveObjC-macOS";
+		};
+		B02405151E940A5100FAC2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B02405091E940A5100FAC2DA /* ReactiveObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D04725F519E49ED7006002AA;
+			remoteInfo = "ReactiveObjC-macOSTests";
+		};
+		B02405171E940A5100FAC2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B02405091E940A5100FAC2DA /* ReactiveObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047260C19E49F82006002AA;
+			remoteInfo = "ReactiveObjC-iOS";
+		};
+		B02405191E940A5100FAC2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B02405091E940A5100FAC2DA /* ReactiveObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D047261619E49F82006002AA;
+			remoteInfo = "ReactiveObjC-iOSTests";
+		};
+		B024051B1E940A5100FAC2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B02405091E940A5100FAC2DA /* ReactiveObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A9B315541B3940610001CB9C;
+			remoteInfo = "ReactiveObjC-watchOS";
+		};
+		B024051D1E940A5100FAC2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B02405091E940A5100FAC2DA /* ReactiveObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 57A4D2411BA13D7A00F7D4B1;
+			remoteInfo = "ReactiveObjC-tvOS";
+		};
+		B024051F1E940A5100FAC2DA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B02405091E940A5100FAC2DA /* ReactiveObjC.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 7DFBED031CDB8C9500EE435B;
+			remoteInfo = "ReactiveObjC-tvOSTests";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		B00AD6EF1E93C5AD00D74A31 /* RORButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RORButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B00AD6F31E93C5AD00D74A31 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -26,6 +78,7 @@
 		B00AD6FE1E93C5AD00D74A31 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B00AD7011E93C5AD00D74A31 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B00AD7031E93C5AD00D74A31 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B02405091E940A5100FAC2DA /* ReactiveObjC.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = ReactiveObjC.xcodeproj; path = ReactiveObjC/ReactiveObjC.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -44,6 +97,7 @@
 			children = (
 				B00AD6F11E93C5AD00D74A31 /* RORButton */,
 				B00AD6F01E93C5AD00D74A31 /* Products */,
+				B024FF371E93FC7D00FAC2DA /* Submodules */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,6 +133,28 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		B024050A1E940A5100FAC2DA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B02405141E940A5100FAC2DA /* ReactiveObjC.framework */,
+				B02405161E940A5100FAC2DA /* ReactiveObjCTests.xctest */,
+				B02405181E940A5100FAC2DA /* ReactiveObjC.framework */,
+				B024051A1E940A5100FAC2DA /* ReactiveObjCTests.xctest */,
+				B024051C1E940A5100FAC2DA /* ReactiveObjC.framework */,
+				B024051E1E940A5100FAC2DA /* ReactiveObjC.framework */,
+				B02405201E940A5100FAC2DA /* ReactiveObjCTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B024FF371E93FC7D00FAC2DA /* Submodules */ = {
+			isa = PBXGroup;
+			children = (
+				B02405091E940A5100FAC2DA /* ReactiveObjC.xcodeproj */,
+			);
+			path = Submodules;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -110,6 +186,7 @@
 				TargetAttributes = {
 					B00AD6EE1E93C5AD00D74A31 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = 37PBRX98B7;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -125,12 +202,70 @@
 			mainGroup = B00AD6E61E93C5AD00D74A31;
 			productRefGroup = B00AD6F01E93C5AD00D74A31 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = B024050A1E940A5100FAC2DA /* Products */;
+					ProjectRef = B02405091E940A5100FAC2DA /* ReactiveObjC.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				B00AD6EE1E93C5AD00D74A31 /* RORButton */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		B02405141E940A5100FAC2DA /* ReactiveObjC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveObjC.framework;
+			remoteRef = B02405131E940A5100FAC2DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B02405161E940A5100FAC2DA /* ReactiveObjCTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveObjCTests.xctest;
+			remoteRef = B02405151E940A5100FAC2DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B02405181E940A5100FAC2DA /* ReactiveObjC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveObjC.framework;
+			remoteRef = B02405171E940A5100FAC2DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B024051A1E940A5100FAC2DA /* ReactiveObjCTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveObjCTests.xctest;
+			remoteRef = B02405191E940A5100FAC2DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B024051C1E940A5100FAC2DA /* ReactiveObjC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveObjC.framework;
+			remoteRef = B024051B1E940A5100FAC2DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B024051E1E940A5100FAC2DA /* ReactiveObjC.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = ReactiveObjC.framework;
+			remoteRef = B024051D1E940A5100FAC2DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		B02405201E940A5100FAC2DA /* ReactiveObjCTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = ReactiveObjCTests.xctest;
+			remoteRef = B024051F1E940A5100FAC2DA /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		B00AD6ED1E93C5AD00D74A31 /* Resources */ = {
@@ -270,6 +405,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 37PBRX98B7;
 				INFOPLIST_FILE = RORButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = igorshkov.RORButton;
@@ -281,6 +417,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 37PBRX98B7;
 				INFOPLIST_FILE = RORButton/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = igorshkov.RORButton;
@@ -307,6 +444,7 @@
 				B00AD7081E93C5AD00D74A31 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
