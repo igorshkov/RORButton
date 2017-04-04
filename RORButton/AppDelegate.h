@@ -7,10 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "RORUIButton.h"
 
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
+@interface AppDelegate : UIResponder <UIApplicationDelegate> {
+    RORUIButton *rorButton;
+}
 
 @property (strong, nonatomic) UIWindow *window;
+
 
 
 @end

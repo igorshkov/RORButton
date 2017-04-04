@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 
+
 @interface ViewController ()
 
 @end
@@ -16,13 +17,39 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    NSLog(@"addRorButton started \n");
+    [self addRorButton];
+    NSLog(@"addRorButton done \n");
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)addRorButton {
+
+//    RORUIButton *rorButton = [RORUIButton buttonWithType:UIButtonTypeSystem];
+    
+    RORUIButton *rorButton = [[RORUIButton alloc] init];
+    
+    [rorButton setTitle:@" ROR! "
+               forState:UIControlStateNormal];
+    
+    [rorButton sizeToFit];
+    
+    rorButton.center = CGPointMake(320/2, 60);
+    
+    [rorButton addTarget:self action:@selector(rorButtonClicked:)
+        forControlEvents:UIControlEventTouchUpInside];
+    
+    [self.view addSubview:rorButton];
+}
+
+-(void) rorButtonClicked:(UIButton*)sender {
+    NSLog(@"you clicked on button %ld", (long)sender.tag);
 }
 
 

@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RORUIButton.h
 //  RORButton
 //
 //  Created by Ivan Gorshkov on 4/4/17.
@@ -7,10 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RORUIButton.h"
+#import <QuartzCore/QuartzCore.h>
 
-@interface ViewController : UIViewController
-
+IB_DESIGNABLE
+@interface RORUIButton : UIButton
 
 @end
-
