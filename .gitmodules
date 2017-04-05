@@ -1,3 +1,6 @@
 [submodule "Submodules/ReactiveObjC"]
 	path = Submodules/ReactiveObjC
 	url = https://github.com/ReactiveCocoa/ReactiveObjC
+[submodule "Submodules/FLAnimatedImage"]
+	path = Submodules/FLAnimatedImage
+	url = https://github.com/Flipboard/FLAnimatedImage

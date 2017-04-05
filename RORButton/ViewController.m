@@ -18,9 +18,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    NSLog(@"addRorButton started \n");
     [self addRorButton];
-    NSLog(@"addRorButton done \n");
 }
 
 
@@ -30,17 +28,14 @@
 }
 
 - (void)addRorButton {
-
-//    RORUIButton *rorButton = [RORUIButton buttonWithType:UIButtonTypeSystem];
-    
     RORUIButton *rorButton = [[RORUIButton alloc] init];
     
-    [rorButton setTitle:@" ROR! "
+    [rorButton setTitle:@"ROR"
                forState:UIControlStateNormal];
     
     [rorButton sizeToFit];
     
-    rorButton.center = CGPointMake(320/2, 60);
+    rorButton.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2, 60);
     
     [rorButton addTarget:self action:@selector(rorButtonClicked:)
         forControlEvents:UIControlEventTouchUpInside];
