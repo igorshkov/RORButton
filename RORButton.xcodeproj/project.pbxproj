@@ -14,6 +14,7 @@
 		B00AD6FF1E93C5AD00D74A31 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B00AD6FE1E93C5AD00D74A31 /* Assets.xcassets */; };
 		B00AD7021E93C5AD00D74A31 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B00AD7001E93C5AD00D74A31 /* LaunchScreen.storyboard */; };
 		B02405241E9412CB00FAC2DA /* RORUIButton.m in Sources */ = {isa = PBXBuildFile; fileRef = B02405231E9412CB00FAC2DA /* RORUIButton.m */; };
+		B0240FFC1E9524FB00FAC2DA /* ReactiveObjC.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B02405181E940A5100FAC2DA /* ReactiveObjC.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -89,6 +90,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0240FFC1E9524FB00FAC2DA /* ReactiveObjC.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "RORUIButton.h"
+#include <ReactiveObjC/ReactiveObjC.h>
 
 @interface ViewController : UIViewController
 
+@property (nonatomic) RORUIButton *rorButton;
 
 @end
 

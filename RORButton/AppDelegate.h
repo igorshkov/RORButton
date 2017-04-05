@@ -7,14 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "RORUIButton.h"
-#include <ReactiveObjC/ReactiveObjC.h>
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate> 
 
 @property (strong, nonatomic) UIWindow *window;
-
-
 
 @end
 

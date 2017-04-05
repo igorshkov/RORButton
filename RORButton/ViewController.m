@@ -13,39 +13,36 @@
 
 @end
 
-@implementation ViewController
+
+@implementation ViewController {
+    CGFloat      width;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self addRorButton];
-}
-
-
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    width = [UIScreen mainScreen].bounds.size.width;
+    
+    [self  addRorButton];
+    
+    self.rorButton.rac_command = [[RACCommand alloc] initWithSignalBlock:^(id _) {
+        NSLog(@"button was pressed!");
+        return [RACSignal empty];
+    }];
 }
 
 - (void)addRorButton {
-    RORUIButton *rorButton = [[RORUIButton alloc] init];
+   
     
-    [rorButton setTitle:@"ROR"
-               forState:UIControlStateNormal];
+    self.rorButton = [[RORUIButton alloc] init];
     
-    [rorButton sizeToFit];
+    [self.rorButton setTitle:@"ROR" forState:UIControlStateNormal];
     
-    rorButton.center = CGPointMake([UIScreen mainScreen].bounds.size.width/2, 60);
+    [self.rorButton sizeToFit];
     
-    [rorButton addTarget:self action:@selector(rorButtonClicked:)
-        forControlEvents:UIControlEventTouchUpInside];
+    self.rorButton.center = CGPointMake(width/2, 60);
     
-    [self.view addSubview:rorButton];
+    [self.view addSubview:self.rorButton];
 }
-
--(void) rorButtonClicked:(UIButton*)sender {
-    NSLog(@"you clicked on button %ld", (long)sender.tag);
-}
-
 
 @end
